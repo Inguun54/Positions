@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        border: 2px solid #e1e1e1;
+        border-radius: 12px;
+        padding: 30px;
+        box-sizing: border-box;
+        width: 90%;
+        max-width: 450px;
+      }
+
+      .container div {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .container input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      .container input::placeholder {
+        color: #aaa;
+      }
+
+      .container button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background-color: #4a90e2;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        font-weight: bold;
+      }
+
+      .container button:hover {
+        background-color: #357abd;
+        transform: translateY(-2px);
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Log in or Sign in</div>
+      <input placeholder="Email" id="email" type="email" />
+      <input placeholder="Phone" id="phoneNumber" />
+      <input
+        placeholder="Password"
+        id="password"
+        type="password"
+        minlength="8"
+      />
+      <button id="Button">Continue</button>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish To-Do List</title>
+    <style>
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #4a90e2, #50e3c2);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+      }
+
+      body {
+        background-color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      #blueContainer {
+        background-color: #fff;
+        width: 460px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+      }
+
+      input {
+        height: 40px;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        padding: 0 12px;
+        box-sizing: border-box;
+      }
+
+      #button {
+        width: 100%;
+        height: 45px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #4a90e2, #50e3c2);
+        border: none;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      #button:hover {
+        background: linear-gradient(135deg, #50e3c2, #4a90e2);
+      }
+
+      .eButton,
+      .rmButton {
+        padding: 10px 15px;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .eButton:hover,
+      .rmButton:hover {
+        background: #555;
+      }
+
+      .Edit,
+      .done,
+      .task {
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To do List</h1>
+    <div id="blueContainer">
+      <input id="Sam" placeholder="Input" />
+      <button id="button">Add</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
