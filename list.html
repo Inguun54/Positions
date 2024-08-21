@@ -30,7 +30,8 @@
 
       #blueContainer {
         background-color: #fff;
-        width: 460px;
+        width: 90%;
+        max-width: 460px;
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -56,7 +57,7 @@
         background: linear-gradient(135deg, #4a90e2, #50e3c2);
         border: none;
         color: #fff;
-        font-size: 25px;
+        font-size: 1.5em;
         cursor: pointer;
         transition: background 0.3s ease;
         text-transform: uppercase;
@@ -82,13 +83,41 @@
         background: #555;
       }
 
-      .Edit,
-      .done,
-      .task {
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+          padding: 15px;
+        }
+
+        #button {
+          font-size: 1.2em;
+        }
+
+        #blueContainer {
+          padding: 15px;
+        }
+
+        input {
+          height: 35px;
+        }
       }
-      @media (min-width: 768px) {
-        .container {
-          width: 80%;
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.5em;
+          padding: 10px;
+        }
+
+        #button {
+          font-size: 1em;
+        }
+
+        #blueContainer {
+          padding: 10px;
+        }
+
+        input {
+          height: 30px;
         }
       }
     </style>
